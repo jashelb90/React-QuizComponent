@@ -3,7 +3,7 @@ import QuizQuestionButton from './QuizQuestionButton.js'
 
 class QuizQuestion extends Component {
 
-    handleClick = (buttonText) => {
+    handleClick(buttonText){
         (this.props.quizQuestion.answer === buttonText ? this.props.showNextQuestionHandler() : null)
     }
 
