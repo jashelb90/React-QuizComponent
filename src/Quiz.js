@@ -15,7 +15,7 @@ class Quiz extends Component {
 
     showNextQuestion = () => {
         this.setState((prevState) => {
-            return { quiz_position: state.quiz_position + 1}
+            return { quiz_position: prevState.quiz_position + 1}
         });
     }
 
